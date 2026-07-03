@@ -5,9 +5,9 @@ description: >
   protected PDFs, and place signature images onto PDF pages — no native
   PDF SDK or platform channels required.
 version: 0.1.0
-homepage: https://github.com/<your-github-username>/tbytes_pdf_flutter
-repository: https://github.com/<your-github-username>/tbytes_pdf_flutter
-issue_tracker: https://github.com/<your-github-username>/tbytes_pdf_flutter/issues
+homepage: https://github.com/Tharunteja321/tbytes_pdf_flutter
+repository: https://github.com/Tharunteja321/tbytes_pdf_flutter
+issue_tracker: https://github.com/Tharunteja321/tbytes_pdf_flutter/issues
 
 topics:
   - pdf

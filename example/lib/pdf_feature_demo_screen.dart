@@ -55,7 +55,6 @@ class _PdfFeatureDemoScreenState extends State<PdfFeatureDemoScreen>
   final List<List<Offset>> _strokes = <List<Offset>>[];
   List<Offset> _currentStroke = <Offset>[];
   bool _hasSig = false;
-  Uint8List? _signatureBytes;
 
   // Fill tab
   final Map<String, TextEditingController> _textControllers =
@@ -255,7 +254,6 @@ class _PdfFeatureDemoScreenState extends State<PdfFeatureDemoScreen>
 
     try {
       final Uint8List sigPng = await _renderSignatureToPng();
-      setState(() => _signatureBytes = sigPng);
 
       final Uint8List originalBytes = await _loadCurrentBytes();
       final PdfDoc doc = PdfDoc.load(originalBytes);

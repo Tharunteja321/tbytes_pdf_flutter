@@ -1,0 +1,37 @@
+name: tbytes_pdf_flutter
+description: >
+  Fill, flatten, decrypt, and sign PDF forms in Flutter. Parse AcroForm
+  fields, flatten filled forms into static content, decrypt password
+  protected PDFs, and place signature images onto PDF pages — no native
+  PDF SDK or platform channels required.
+version: 0.1.0
+homepage: https://github.com/<your-github-username>/tbytes_pdf_flutter
+repository: https://github.com/<your-github-username>/tbytes_pdf_flutter
+issue_tracker: https://github.com/<your-github-username>/tbytes_pdf_flutter/issues
+
+topics:
+  - pdf
+  - forms
+  - signature
+  - acroform
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Used only by lib/src/image_decoder (a trimmed vendored subset of the
+  # `image` package) to inflate PNG's zlib-compressed pixel data.
+  # See lib/src/image_decoder/README.md for why this is vendored rather
+  # than depending on `package:image` directly.
+  archive: ^3.6.1
+  # Used by PdfDecryptor for RC4 / AES decryption of password-protected PDFs.
+  crypto: ^3.0.3
+  encrypt: ^5.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0

@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    # Vendored third-party code (trimmed `image` package subset) — not
+    # subject to this package's own lint rules, since it's a deliberately
+    # minimally-modified copy of upstream code. See
+    # lib/src/image_decoder/README.md for why it's vendored.
+    - lib/src/image_decoder/**
+
+linter:
+  rules:
+    # Add or override specific lint rules here as needed.

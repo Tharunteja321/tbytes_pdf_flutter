@@ -1,0 +1,32 @@
+name: example
+description: Example app demonstrating every feature of tbytes_pdf_flutter.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tbytes_pdf_flutter:
+    path: ../
+
+  # PDF viewer glue for this example ONLY — not a dependency of the package
+  # itself. tbytes_pdf_flutter deliberately has no viewer; use whichever
+  # viewer your app already has. See lib/cached_pdf_view.dart and the root
+  # THIRD_PARTY_NOTICES.md for details on these two packages.
+  pdfrx: ^1.1.0
+  flutter_pdfview: ^1.4.4
+  http: ^1.2.0
+  path_provider: ^2.1.0
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
